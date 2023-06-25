@@ -17,7 +17,7 @@ docker build --build-arg USERNAME=username -t myimage .
 Once the Docker image is built, you can run a container based on it.  
 Use the following steps:
 1. Open a terminal.
-2. Execute the command below to start the container, replacing name with your desired name and $(pwd)/:/output with the desired output directory path:
+2. Execute the command below to start the container, replacing name with your desired name and `$(pwd)/:/output` with the desired output directory path:
 ```bash
 docker run --rm --env MYNAME=name --volume $(pwd)/:/output myimage
 ```
