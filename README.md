@@ -1,10 +1,10 @@
 # Docker CPU Information Container
 This repository contains a Docker container that retrieves and saves host machine's CPU information. The container was created as part of a test task, and it serves as a reminder of my ability to write such scripts.
 
-### Prerequisites
+## Prerequisites
 - Docker installed on your system
 
-### Building the Docker Image
+## Building the Docker Image
 To build the Docker image, follow the steps below:
 1. Clone or download this repository to your local machine.
 2. Open a terminal and navigate to the directory where the Dockerfile is located.
@@ -13,7 +13,7 @@ To build the Docker image, follow the steps below:
 docker build --build-arg USERNAME=username -t myimage .
 ```
 
-### Running the Docker Container
+## Running the Docker Container
 Once the Docker image is built, you can run a container based on it.  
 Use the following steps:
 1. Open a terminal.
@@ -22,10 +22,10 @@ Use the following steps:
 docker run --rm --env MYNAME=name --volume $(pwd)/:/output myimage
 ```
 
-### Output
+## Output
 The container executes a script that retrieves the CPU information of the host machine and saves it to a file named `cpu.txt` inside the output directory specified during container execution.
 
-### Cleaning Up
+## Cleaning Up
 When you have finished using the container, you can remove the Docker image by running the following command in a terminal:
 ```bash
 docker rmi myimage
